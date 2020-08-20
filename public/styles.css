@@ -9,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: none;
 }
 
 body {
@@ -20,26 +20,47 @@ body {
 
 header {
     padding: 32px;
-    border-bottom: 1px solid #333;
+    box-sizing: border-box;
     background: rgb(153, 10, 10);
+    text-align: center;
+    width: 100%;
 }
 
 .links {
-    text-align: center;
+    font-size: 22px;
+}
+
+.links a + a {
+    margin-left: 32px;
 }
 
 .links a {
     color: white;
-    font-size: 28px;
-    line-height: 38px;
-    margin: 0 16px;
-    padding-bottom: 3px;
     text-decoration: none;
+    position: relative;
+}
+
+.links a.active {
+    font-weight: 600;
 }
 
 .links a:hover {
-    color: var(--color-green);
-    transition: color 200ms;
+    color: #f8ea2a;
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff456;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 400ms ease-in-out;
 }
 
 #wrapper {
