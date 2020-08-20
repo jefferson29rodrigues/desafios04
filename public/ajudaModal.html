@@ -1,0 +1,327 @@
+<!DOCTYPE <html>
+<html lang="pt-br">
+    <head>
+        <title>Restaurante FoodFy</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/Styles/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <div class="logo">FoodFy</div>
+                <div class="links">
+                    <a href="/">Sobre</a>
+                    <a href="/">Receitas</a>
+                </div>
+            </header>
+            <div class="apresentation">
+                <div class="titulo">
+                    As melhores Receitas
+                </div>
+                <div class="conteudo">
+                    Aprenda a construir os melhores pratos<br>
+                    com receitas criadas por profisionais<br>
+                    do mundo inteiro.
+                </div>
+                <div class="imagem">
+                    <img src="/Images/assets/chef.png" alt="">
+                </div>
+                
+            </div>
+            <section class="container-grid">
+                <div class="text">
+                    <p>Mais Acessadas</p>
+                </div>
+                <div class="grids">
+                    <div class="grid" id="bacon">
+                        <img src="/Images/layouts/assets/burger.png" alt="">
+                        <h4>Triplo bacon burger</h4>
+                        <h5>por Jorge Relato</h5>
+                    </div>
+                    <div class="grid" id="/Images/layouts/assets/pizza.png">
+                        <img src="/Images/layouts/assets/pizza.png" alt="">
+                        <h4>Pizza 4 estações</h4>
+                        <h5>por Fabiana Melo</h5>
+                    </div>
+                    <div class="grid" id="espaguete">
+                        <img src="/Images/layouts/assets/espaguete.png" alt="">
+                        <h4>Espaguete ao alho</h4>
+                        <h5>por Júlia Kinodo</h5>
+                    </div>
+                    <div class="grid" id="lasanha">
+                        <img src="/Images/layouts/assets/lasanha.png" alt="">
+                        <h4>Lasanha mac n' chees</h4>
+                        <h5>por Juliano Vieira</h5>
+                    </div>
+                    <div class="grid" id="doce">
+                        <img src="/Images/layouts/assets/doce.png" alt="">
+                        <h4>Docinho pão-do-céu</h4>
+                        <h5>por Ricardo Golvea</h5>
+                    </div>
+                    <div class="grid" id="asinhas">
+                        <img src="/Images/layouts/assets/asinhas.png" alt="">
+                        <h4>Asinhas de frango ao barbecue</h4>
+                        <h5>por Vania Steroski</h5>
+                    </div>
+                </div>
+            </section>
+            <div class="footer">
+                <p>Foodfy - Copyright 2020 - Todos os direitos Reservados</p>
+            </div>
+            <div class="modal-overlay">
+                <div class="modal">
+                    <a class="close-modal">
+                        <span class="material-icons">cancel</span>
+                        <!-- <i class="material-icons">Close</i> -->
+                    </a>
+                    <div class="modal-content">
+                        <iframe src="" frameborder="0"></iframe>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script src="../Js/scripts.js"></script>
+    </body>
+</html>
+
+
+
+=============================== JAVA SCRIPT ======================
+const modalOverlay = document.querySelector('.modal-overlay')
+const grids = document.querySelectorAll('.grid')
+
+for (let grid of grids) {
+    grid.addEventListener("click", function(){
+        const gridId = grid.getAttribute("id");
+        modalOverlay.classList.add('active')
+        modalOverlay.querySelector("iframe").src = `${gridId}`
+       
+    })
+}
+
+
+
+document.querySelector(".close-modal").addEventListener("click", function(){
+    modalOverlay.classList.remove("active")
+})
+
+
+
+
+
+
+===================== CSS ==============================
+@import "https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap";
+
+body {
+    margin: 0px;
+    font-size: 62.5%;
+ 
+}
+
+header {
+    background-color: #e4e4e4;
+    height: 93px;
+    display: flex;
+}
+
+header .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30;
+    position: relative;
+    left: 2rem;
+    top: 1.6rem;
+}
+
+header .links {
+    margin: auto; 
+    position: relative;
+    left: 20rem;
+}
+
+.links a {
+    padding: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: #e9910c;
+}
+
+.content {
+    background-color: #e4e4e4;
+    height: auto;
+    margin: 0 auto;
+    width: 940px;
+}
+.apresentation {
+    position: 230px 93px;
+    background-color: #FBDFDB;
+    width: 940px;
+    height: 366px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.apresentation .titulo {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #111111;
+    margin: 117px 545px 0px 60px;
+    
+}
+
+.apresentation .conteudo {
+    margin: 0px 545px 0px 60px;
+    opacity: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.apresentation .imagem {
+    width: 216px;
+    height: 300px;
+    margin: -180px 100px 0px 624px;
+    
+    
+}
+
+.container-grid .grids {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    margin-top: 0px;
+    grid-gap: 20px;
+}
+
+.grid img {
+    max-width: 300px;
+    max-height: 140px;
+    border-radius: 20px;
+}
+
+.container-grid .text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+.container-grid h4, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.footer {
+    width: 940px;
+    background-color: rgb(202, 202, 201);
+    margin-bottom: 0px;
+    margin-top: 25px;
+    height: 93px;
+    position: relative;
+    align-items: center;
+    display:table;
+}
+
+.footer p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-items: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.grid {
+    cursor: pointer;
+}
+
+/* MODAL */
+
+.content .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 700px;
+    height: 480px;
+    position: fixed;
+    left: 27%;
+    top: 20%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    margin: 3.3vh auto; 
+    position: relative;
+}
+
+.modal .close-modal {
+    color: rgb(255, 1, 1);
+   float: right;
+   padding: 5px 5px 0 0;
+   cursor: pointer;
+}
+
+/* === MODAL ATIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width: 940px) {
+    header .links {
+        left: 270px;
+           
+    }
+}
+@media (min-width: 768px) and (max-width: 940px) {
+    header .links {
+        left: 150px;     
+    }
+}
+@media (min-width: 460px) and (max-width: 768px) {
+    header .links {
+        left: -30px;     
+    }
+}
+@media (min-width: 360px) and (max-width: 460px) {
+    header .links {
+        left: -30px;     
+    }
+}
+
+/* @media (max-width: 600px) {
+    header .links {
+        left: 100px;
+        font-weight: bold;
+    }
+    
+    .apresentation .titulo {
+        margin: 50px 0px 0px 60px;
+        
+    }
+    
+    .apresentation .conteudo {
+        margin: 0px 0px 0px 60px;
+    }
+} */
