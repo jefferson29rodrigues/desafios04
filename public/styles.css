@@ -117,6 +117,15 @@ header {
     background-color: var(--color-rocketseat);
     display: grid;
     cursor: pointer;
+    width: 800px;
+    height: 400px;
+    display: grid 1fr 1fr;
+    margin: auto;
+}
+
+.imagem {
+    width: 300px;
+    height: 400px;
 }
 
 .card__image-container img {
