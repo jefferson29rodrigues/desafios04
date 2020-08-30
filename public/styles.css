@@ -13,7 +13,7 @@
 }
 
 body {
-    background: #282a36;
+    background: #ffffff;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
@@ -21,7 +21,7 @@ body {
 header {
     padding: 32px;
     box-sizing: border-box;
-    background: rgb(153, 10, 10);
+    background: rgb(121, 129, 115);
     text-align: center;
     width: 100%;
 }
@@ -45,14 +45,14 @@ header {
 }
 
 .links a:hover {
-    color: #f8ea2a;
+    color: #56ebff;
 }
 
 .links a::after {
     content: "";
     width: 0;
-    height: 3px;
-    background-color: #fff456;
+    height: 2px;
+    background-color: #56ebff;
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -114,13 +114,16 @@ header {
 }
 
 .card {
-    background-color: var(--color-rocketseat);
+    background-color: #a9abac;
+    width: 800px;
+    min-height: 400px;
+    margin: auto;
+
     display: grid;
     grid-template-columns: 2fr 3fr;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.7);
     cursor: pointer;
-    width: 800px;
-    height: 400px;
-    margin: auto;
+    
 }
 
 .imagem {
@@ -128,12 +131,18 @@ header {
 }
 
 .detalhes {
-
+    padding: 30px;
 }
 
-.item {/*
-    width: 500px;
-    height: 400px;*/
+.detalhes .item {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(104, 98, 98, 0.287);
+}
+
+.detalhes .item  {
+    font-size: 14px;
+    line-height: 24px;
+
 }
 
 .card__image-container img {
