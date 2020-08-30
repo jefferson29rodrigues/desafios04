@@ -117,7 +117,7 @@ header {
     background-color: #a9abac;
     width: 800px;
     min-height: 400px;
-    margin: auto;
+    margin: 20px auto;
 
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -142,7 +142,7 @@ header {
     }
 }
 
-.imagem {
+.imagem:first-child {
 
 }
 
@@ -150,16 +150,27 @@ header {
     padding: 30px;
 }
 
-.detalhes .item {
-    padding: 16px 0;
-    border-bottom: 1px solid rgba(104, 98, 98, 0.287);
-}
-
 .detalhes .item  {
+    
     font-size: 14px;
     line-height: 24px;
     text-shadow: 0.3px 0.3px 1px black;
 
+    padding: 16px 0;
+    border-top: 1px solid rgba(104, 98, 98, 0.287);
+}
+
+.detalhes .item:first-child {
+    border: none;
+}
+
+.detalhes .item:first-letter {
+    font-size: 25px;
+    color: rgb(246, 58, 58);
+}
+
+h3 {
+    text-shadow: 0.3px 0.3px 3px black;
 }
 
 .card__image-container img {
