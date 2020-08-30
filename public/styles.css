@@ -158,6 +158,7 @@ header {
 .detalhes .item  {
     font-size: 14px;
     line-height: 24px;
+    text-shadow: 0.3px 0.3px 1px black;
 
 }
 
