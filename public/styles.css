@@ -125,7 +125,7 @@ header {
     cursor: pointer;
 
     animation-name: animacao;
-    animation-duration: 800ms;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
 
     animation-fill-mode: forwards;
@@ -135,7 +135,38 @@ header {
 
 @keyframes animacao {
     from {
-        
+        transform: translateX(650px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card2 {
+    background-color: #a9abac;
+    width: 800px;
+    min-height: 400px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+
+    animation-name: animacao;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+
+    animation-fill-mode: forwards;
+
+    animation-delay: 2s;
+
+    opacity: 0;
+}
+
+@keyframes animacao {
+    from {
+        transform: translateX(650px);
     }
     to {
         opacity: 1;
@@ -154,14 +185,16 @@ header {
     
     font-size: 14px;
     line-height: 24px;
-    text-shadow: 0.3px 0.3px 1px black;
+    /*text-shadow: 1px 1px .1px black;*/
 
     padding: 16px 0;
     border-top: 1px solid rgba(104, 98, 98, 0.287);
 }
 
+/* AJEITAR */
 .detalhes .item:first-child {
     border: none;
+    color: burlywood;
 }
 
 .detalhes .item:first-letter {
@@ -169,8 +202,40 @@ header {
     color: rgb(246, 58, 58);
 }
 
+.detalhes .item:nth-child(7) {
+    color: rgb(222, 240, 123);
+    text-shadow: 0px 0px 3px white;
+    font-size: 18px;
+}
+
+.detalhes .item span:nth-child(1) {
+    color: black;
+    background-color: rgb(229, 255, 0);
+    text-shadow: 0px 0px 3px white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 16px;
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 8px 4px;
+}
+
+.detalhes .item span:nth-child(2) {
+    color: black;
+    background-color: rgb(229, 255, 0);
+    text-shadow: 0px 0px 3px white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 16px;
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 8px 4px;
+}
+
 h3 {
-    text-shadow: 0.3px 0.3px 3px black;
+    /*text-shadow: 0.3px 0.3px 3px black;*/
 }
 
 .card__image-container img {
