@@ -1,0 +1,16 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "http://jeff.com.br",
+      "name": "Jefferson Rodrigues do Nascimento"
+    },
+    {
+      "avatar_url": "http://ju.com.br",
+      "name": "juliana dos santos silva rodrigues"
+    },
+    {
+      "avatar_url": "http://outro.com.br",
+      "name": "projeto1"
+    }
+  ]
+}
