@@ -35,6 +35,12 @@
       "escolaridade": "Sc",
       "tipoEnsino": "Ead",
       "areaAtuacao": "ihgdh"
+    },
+    {
+      "name": "juliana dos santos silva rodrigues",
+      "endereco": "Rua mar do leste",
+      "pagamento": "dinheiro",
+      "tipoEnsino": "Presencial"
     }
   ]
 }
