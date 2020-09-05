@@ -41,6 +41,14 @@
       "endereco": "Rua mar do leste",
       "pagamento": "dinheiro",
       "tipoEnsino": "Presencial"
+    },
+    {
+      "sanduiches": "Bauru-Simples",
+      "pizza": "Sertaneja",
+      "Bebidas": "Coca-cola",
+      "name": "juliana dos santos silva rodrigues",
+      "endereco": "Rua mar do leste n 23",
+      "pagamento": "debito"
     }
   ]
 }

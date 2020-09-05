@@ -1,5 +1,9 @@
 {% extends "layout.njk" %}
 
+{% block head %}
+    <title>Sobre - Jefferson Rodrigues</title>    
+{% endblock %}
+
 {% block content %}
 <form class="card" method="POST" action="/teachers">
     <section class="avatar" style=" background: url(https://source.unsplash.com/collection/3203326/500x500) no-repeat center center / cover " ></section>
@@ -78,7 +82,38 @@
 
 
     <section>
-        <h3>Pedidos</h3>
+        <h3>Pedidos</h3>        
+
+        <div class="item">
+            <div>Sanduiches</div>
+            <div>
+                <span><input type="radio" name="sanduiches" value="Cachorro-Quente" >Cachorro Quente</span>
+                <span><input type="radio" name="sanduiches" value="Bauru-Simples" >Bauru Simples</span>
+                <span><input type="radio" name="sanduiches" value="X-Tudo" >X-Tudo</span>
+                <span><input type="radio" name="sanduiches" value="X-Bacon" >X-Bacon</span>
+                <span><input type="radio" name="sanduiches" value="X-Salada" >X-Salada</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Pizzas</div>
+            <div>
+                <span><input type="radio" name="pizza" value="Mussarela" >Mussarela</span>
+                <span><input type="radio" name="pizza" value="Calabresa" >Calabresa</span>
+                <span><input type="radio" name="pizza" value="Sertaneja" >Sertaneja</span>
+                <span><input type="radio" name="pizza" value="Chocolate" >Chocolate</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Bebidas</div>
+            <div>
+                <span><input type="radio" name="Bebidas" value="Coca-cola" >Coca-cola</span>
+                <span><input type="radio" name="Bebidas" value="Guaraná-Antartica" >Guaraná Antartica</span>
+                <span><input type="radio" name="Bebidas" value="Suco-de-Laranja" >Suco de Laranja</span>
+                <span><input type="radio" name="Bebidas" value="Suco-de-Goiaba" >Suco de Goiaba</span>
+            </div>
+        </div>
 
         <div class="item">
             <div>Nome completo</div>
@@ -112,23 +147,6 @@
                 </select>
             </div>
         </div>
-
-        <div class="item">
-            <div>Sanduiches</div>
-            <div>
-                <span><input type="radio" name="tipoEnsino" value="Presencial" >Bauru Simples</span>
-                <span><input type="radio" name="tipoEnsino" value="Ead" >X-Tudo</span>
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Bebidas</div>
-            <div>
-                <span><input type="radio" name="tipoEnsino" value="Presencial" >Coca-cola</span>
-                <span><input type="radio" name="tipoEnsino" value="Ead" >Guaraná Antartica</span>
-            </div>
-        </div>
-
 
         <button type="submit">Salvar</button>
     </section>
