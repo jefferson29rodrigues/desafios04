@@ -1,6 +1,17 @@
 const fs = require('fs');
 const data = require('./data.json')
 
+// show
+
+
+exports.show = function (req, res) {
+    const id = req.params.id
+
+    const teacher = data.teachers;
+
+    return res.render('teachers/show', { teacher, id })
+}
+
 // create
 exports.post = function(req, res) {
     const keys = Object.keys(req.body)
@@ -19,3 +30,4 @@ exports.post = function(req, res) {
         return res.redirect("/teachers")
     });  
 }
+
