@@ -191,6 +191,15 @@ header {
     border-top: 1px solid rgba(104, 98, 98, 0.287);
 }
 
+.detalhes .item input {
+    background-color: #fff;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+}
+
 /* AJEITAR */
 .detalhes .item:first-child {
     border: none;
@@ -261,48 +270,7 @@ h3 {
     text-align: center;
 }
 
-/*=== MODAL ===*/
 
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal {
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 90%;
-    height: 90%;
-    margin: 5vh auto;
-    position: relative;
-}
-
-.modal .close-modal {
-    color: black;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    cursor: pointer;
-}
-
-/*=== MODAL.ACTIVE ===*/
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-iframe {
-    width: 96%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
-    left: 2%;
-}
 
 /*=== FEATURED===*/
 

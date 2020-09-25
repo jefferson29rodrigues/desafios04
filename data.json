@@ -1,55 +1,28 @@
 {
   "teachers": [
     {
-      "avatar_url": "http://jeff.com.br",
-      "name": "Jefferson Rodrigues do Nascimento"
-    },
-    {
-      "avatar_url": "http://ju.com.br",
-      "name": "juliana dos santos silva rodrigues"
-    },
-    {
-      "avatar_url": "http://outro.com.br",
-      "name": "projeto1"
-    },
-    {
-      "avatar_url": "http://jeff.com.br",
-      "name": "jefferson",
-      "birth": "2020-09-03",
-      "escolaridade": "Sc",
-      "tipoEnsino": "on",
-      "areaAtuacao": "ihgdhrtyhdfghndrfhnjdrf"
-    },
-    {
-      "avatar_url": "http://outro.com.br",
-      "name": "projeto1",
-      "birth": "2020-09-03",
-      "escolaridade": "Sc",
-      "Presencial": "on",
-      "areaAtuacao": "ihgdh"
-    },
-    {
-      "avatar_url": "http://dataNumerica.com.br",
-      "name": "dataNumerica",
-      "birth": "2020-09-03",
+      "avatar_url": "https://img.olx.com.br/images/85/858003001205778.jpg",
+      "name": "Jeff Jeff",
+      "birth": "2020-09-25",
       "escolaridade": "Sc",
       "tipoEnsino": "Ead",
-      "areaAtuacao": "ihgdh"
+      "areaAtuacao": "Programador, Jogador VG, Estudante"
     },
     {
+      "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
       "name": "juliana dos santos silva rodrigues",
-      "endereco": "Rua mar do leste",
-      "pagamento": "dinheiro",
+      "birth": "1999-03-08",
+      "escolaridade": "Sc",
       "tipoEnsino": "Presencial",
-      "birth": "08-08-1999"
+      "areaAtuacao": "Caixa, Estudante,  Cantora"
     },
     {
-      "sanduiches": "Bauru-Simples",
-      "pizza": "Sertaneja",
-      "Bebidas": "Coca-cola",
-      "name": "juliana dos santos silva rodrigues",
-      "endereco": "Rua mar do leste n 23",
-      "pagamento": "debito"
+      "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
+      "name": "Jefferson Rodrigues do Nascimento",
+      "birth": "1990-08-31",
+      "escolaridade": "Sc",
+      "tipoEnsino": "Ead",
+      "areaAtuacao": "Programador, Estudante, Professor"
     }
   ]
 }
