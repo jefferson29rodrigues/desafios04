@@ -7,9 +7,13 @@ const data = require('./data.json')
 exports.show = function (req, res) {
     const id = req.params.id
 
-    const teacher = data.teachers;
+    const teachersAll = data.teachers;
 
-    return res.render('teachers/show', { teacher, id })
+    const teacher = teachersAll.find(element => id == element.id);
+
+    if (!teacher) return res.send("This Teacher no Exist!")
+
+    return res.render('teachers/show', { teacher/*, id*/ })
 }
 
 // create
