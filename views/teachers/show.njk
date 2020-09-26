@@ -33,8 +33,9 @@
         <div class="item">
             <div>Acompanhamento</div>
             <div>
-                <span>Programação</span>
-                <span>Matemática</span>
+                {% for j in teacher.areaAtuacao %}
+                <span>{{ j }}</span>
+                {% endfor %}
             </div>
         </div>
 

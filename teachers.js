@@ -9,10 +9,16 @@ exports.show = function (req, res) {
 
     const teachersAll = data.teachers;
 
-    const teacher = teachersAll.find(element => id == element.id);
+    const foundTeacher = teachersAll.find(element => id == element.id);
 
-    if (!teacher) return res.send("This Teacher no Exist!")
+    if (!foundTeacher) return res.send("This Teacher no Exist!")
 
+    const teacher = {
+        ...foundTeacher,
+        areaAtuacao: foundTeacher.areaAtuacao.split(","),
+        
+    }
+    
     return res.render('teachers/show', { teacher/*, id*/ })
 }
 
