@@ -200,6 +200,21 @@ header {
     border-radius: 25px;
 }
 
+.detalhes .item select {
+    background-color: rgb(177, 251, 202);
+    height: 50px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    color: rgb(139, 137, 137);
+}
+
+section button {
+    width: auto;
+    height: 15px;
+}
+
 /* AJEITAR */
 .detalhes .item:first-child {
     border: none;
