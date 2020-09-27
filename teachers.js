@@ -1,5 +1,6 @@
 const fs = require('fs');
 const data = require('./data.json')
+const { age } = require('./utils')
 
 // show
 
@@ -16,7 +17,7 @@ exports.show = function (req, res) {
     const teacher = {
         ...foundTeacher,
         areaAtuacao: foundTeacher.areaAtuacao.split(","),
-        
+        birth: age(foundTeacher.birth)
     }
     
     return res.render('teachers/show', { teacher/*, id*/ })
