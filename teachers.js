@@ -33,7 +33,23 @@ exports.post = function(req, res) {
         }
     }
 
-    data.teachers.push(req.body);
+
+    let { avatar_url, name, birth, escolaridade, tipoEnsino, areaAtuacao } = req.body
+
+    const id = Number(data.teachers.length + 1)
+
+    //data.teachers.push(req.body);
+    data.teachers.push({
+        id,
+        avatar_url,
+        name,
+        birth,
+        escolaridade,
+        tipoEnsino,
+        areaAtuacao
+    });
+
+
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
         if (err) return res.send("write file error!")
