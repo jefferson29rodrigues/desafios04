@@ -62,3 +62,19 @@ exports.post = function(req, res) {
     });  
 }
 
+exports.edit = function(req, res) {
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find(function(teach) {
+        return id == teach.id
+    })
+
+    if (!foundTeacher) return res.send("This teacher no Exist!")
+
+    const teacher = {
+        ...foundTeacher,
+        birth: date(foundTeacher.birth)
+    }
+
+    return res.render('teachers/edit', { teacher })
+}
