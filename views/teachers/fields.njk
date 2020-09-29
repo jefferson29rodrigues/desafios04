@@ -26,9 +26,40 @@
     <div>Birth date</div>
     <div>
         <input 
-            type="text"
+            type="date"
             name="birth"
             value="teacher.birth"
         >
+    </div>
+</div>
+
+<div class="item">
+    <div>Graduação</div>
+
+</div>
+
+<div class="item">
+    <div>Modalidade de Ensino</div>
+    <div>
+        <span>
+            <input 
+                type="radio"
+                name="tipoEnsino"
+                value="presencial"
+                {% if teacher.tipoEnsino == 'Presencial' %}
+                    checked
+                {% endif %}
+            > Presencial
+        </span>
+        <span>
+            <input 
+                type="radio"
+                name="tipoEnsino"
+                value="ead"
+                {% if teacher.tipoEnsino == 'Ead' %}
+                    checked
+                {% endif %}
+            > Ead
+        </span>
     </div>
 </div>
