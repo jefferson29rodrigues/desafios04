@@ -4,7 +4,6 @@ const { age, date } = require('./utils')
 
 // show
 
-
 exports.show = function (req, res) {
     const id = req.params.id
 
