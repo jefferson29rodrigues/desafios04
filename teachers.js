@@ -79,3 +79,28 @@ exports.edit = function(req, res) {
 
     return res.render('teachers/edit', { teacher })
 }
+
+// update
+
+exports.put = function(req, res) {
+    const { id } = req.body
+    index = 0
+
+    const foundTeacher = data.teachers.find(function(teacher, foundIndex) {
+        if (id == teacher.id) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    if (!foundTeacher) return res.send("Instructor not found!")
+
+    const teacher = {
+        ...foundTeacher,
+        ...req.body,
+        birth: Date.parse(req.body.birth)
+    }
+
+    
+
+}
