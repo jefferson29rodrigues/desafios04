@@ -19,13 +19,13 @@
       "areaAtuacao": "Caixa, Estudante, Cantora"
     },
     {
-      "id": 3,
+      "id": "3",
       "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
       "name": "Jefferson Rodrigues do Nascimento",
-      "birth": "1990-08-31",
-      "escolaridade": "Superior Completo",
-      "tipoEnsino": "Ead",
-      "areaAtuacao": "Programador, Estudante, Professor"
+      "birth": 1030752000000,
+      "escolaridade": "medio",
+      "tipoEnsino": "presencial",
+      "areaAtuacao": "Programador, Gamer"
     },
     {
       "id": 4,
