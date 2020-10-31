@@ -1,6 +1,6 @@
 const fs = require('fs');
-const data = require('./data.json')
-const { age, date, desde } = require('./utils')
+const data = require('./data.json');
+const { age, date, desde } = require('./utils');
 
 // show
 
@@ -100,7 +100,14 @@ exports.put = function(req, res) {
         ...req.body,
         birth: Date.parse(req.body.birth)
     }
-
     
+    data.teachers[index] = teacher
 
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+        if (err) return res.send("Write error!")
+
+        return res.redirect(`/teachers/${id}`)
+    })
 }
+
+//delete
