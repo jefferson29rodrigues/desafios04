@@ -63,6 +63,8 @@ header {
     transition: width 400ms ease-in-out;
 }
 
+/*=== CARD ===*/
+
 #wrapper {
     text-align: center;
     padding: 32px;
@@ -173,10 +175,6 @@ header {
     }
 }
 
-.imagem:first-child {
-
-}
-
 .detalhes {
     padding: 30px;
 }
@@ -258,69 +256,16 @@ section button {
     margin: 8px 4px;
 }
 
-h3 {
-    /*text-shadow: 0.3px 0.3px 3px black;*/
-}
+/* FORM */
 
-.card__image-container img {
-    width: 100%;
-}
-
-.card__content,
-.card__info {
-    padding: 15px;
-}
-
-.card__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-
-.card__price {
+button[type="submit"] {
+    padding: 8px 32px;
     background-color: var(--color-rocketseat);
-    filter: brightness(90%);
-    padding: 5px 20px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-
-
-/*=== FEATURED===*/
-
-.featured-wrapper.card__image-container {
-    position: relative;
-}
-
-.featured {
-    position: absolute;
-    background-color: aqua;
-    color: black;
-    padding: 5px;
-    right: 5px;
-    font-size: 9px;
-    border-radius: 15px;
-    font-weight: bolder;
-}
-
-/*=== VíDEO PAGE ===*/
-
-.video {
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.card__video-container {
-    position: relative;
-    padding-top: 62.5%;
-}
-
-.card__video-container iframe {
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 32px;
     width: 100%;
-    height: 90%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
 }
-
