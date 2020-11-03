@@ -277,3 +277,13 @@ a.button {
     text-align: center;
     text-decoration: none;
 }
+
+#form-delete button[type="submit"] {
+    margin-top: 12px;
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+.table-container {
+    display: block;
+}

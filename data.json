@@ -46,15 +46,6 @@
       "areaAtuacao": "Jogador de Futebol, Jogador de Free Fire"
     },
     {
-      "id": 6,
-      "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
-      "name": "ainda não completou ano",
-      "birth": "2000-09-28",
-      "escolaridade": "Dr",
-      "tipoEnsino": "Presencial",
-      "areaAtuacao": "Programador, Professor"
-    },
-    {
       "id": 7,
       "avatar_url": "https://img.olx.com.br/images/85/858003001205778.jpg",
       "name": "Everton",
@@ -124,16 +115,6 @@
       "created_at": 1601522104962
     },
     {
-      "id": 16,
-      "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
-      "name": "juliana dos santos silva rodrigues",
-      "birth": "2020-10-01",
-      "escolaridade": "mestrado",
-      "tipoEnsino": "ead",
-      "areaAtuacao": "Cantora",
-      "created_at": 1601582266049
-    },
-    {
       "id": 17,
       "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
       "name": "juliana dos santos silva rodrigues",
@@ -142,16 +123,6 @@
       "tipoEnsino": "presencial",
       "areaAtuacao": "Estudante, Cantora",
       "created_at": 1601582340529
-    },
-    {
-      "id": 18,
-      "avatar_url": "http://jeff.com.br",
-      "name": "jefferson_new",
-      "birth": "2000-08-31",
-      "escolaridade": "Sc",
-      "tipoEnsino": "Presencial",
-      "areaAtuacao": "Programador, Professor",
-      "created_at": 1603805472702
     },
     {
       "id": 19,
@@ -164,16 +135,6 @@
       "created_at": 1603805605037
     },
     {
-      "id": 20,
-      "avatar_url": "http://jeff.com.br",
-      "name": "Jefferson Rodrigues do Nascimento",
-      "birth": "2000-10-08",
-      "escolaridade": "superior",
-      "tipoEnsino": "presencial",
-      "areaAtuacao": "Programador, Professor",
-      "created_at": 1603806685594
-    },
-    {
       "id": 21,
       "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
       "name": "yossef akiva",
@@ -182,45 +143,6 @@
       "tipoEnsino": "presencial",
       "areaAtuacao": "Pregador, Pastor",
       "created_at": 1603806792877
-    },
-    {
-      "id": 22,
-      "avatar_url": "http://jeff.com.br",
-      "name": "Jefferson Rodrigues do Nascimento",
-      "birth": "2000-03-01",
-      "escolaridade": "superior",
-      "tipoEnsino": "presencial",
-      "areaAtuacao": "Programador, Professor",
-      "created_at": 1603807451170
-    },
-    {
-      "id": 23,
-      "avatar_url": "http://jeff.com.br",
-      "name": "Jefferson Rodrigues do Nascimento",
-      "birth": "2000-03-01",
-      "escolaridade": "superior",
-      "areaAtuacao": "Programador, Professor",
-      "created_at": 1603807685135
-    },
-    {
-      "id": 24,
-      "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
-      "name": "Jefferson Rodrigues do Nascimento",
-      "birth": 652060800000,
-      "escolaridade": "superior",
-      "tipoEnsino": "presencial",
-      "areaAtuacao": "Programador",
-      "created_at": 1604157138243
-    },
-    {
-      "id": "25",
-      "avatar_url": "https://vs.media/resize?compression=8&quality=65&url=http%3A%2F%2Fimg.vs.media%2F1554726933755-52810539_2169466816425041_4414742899484753889_n.jpg&width=320",
-      "name": "Jefferson Rodrigues do Nascimento",
-      "birth": 652060800000,
-      "escolaridade": "superior",
-      "tipoEnsino": "presencial",
-      "areaAtuacao": "Programador, Professor",
-      "created_at": 1604157174023
     }
   ]
 }
